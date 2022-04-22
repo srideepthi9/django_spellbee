@@ -1,0 +1,3 @@
+Python - version I used(3.10.4)
+Django - use pip install django
+textblob - use pip install textblob

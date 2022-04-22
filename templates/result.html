@@ -1,0 +1,20 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+<br></br>
+<br></br>
+
+<h1> Correct spelling is: {{result}} </h1>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<form action ="mispell" method="POST">
+{% csrf_token %}
+
+    Enter another word / sentence: <input type="text" name="word"><br><br>
+    <input type="submit">
+</form>
+
+{% endblock %}

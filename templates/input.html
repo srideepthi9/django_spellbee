@@ -1,0 +1,21 @@
+
+{% extends 'basic.html' %}
+
+{% block content %}
+
+<h1>Spelling Check</h1>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<form action="mispell" method="POST">
+    {% csrf_token %}
+
+    Enter word / sentence: <input type="text" name="word"><br><br>
+    <input type="submit">
+</form>
+
+
+{% endblock %}
+
